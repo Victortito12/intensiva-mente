@@ -4,22 +4,37 @@
   <meta charset="UTF-8" />
   <title>Catálogo - Minha Mentoria</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="dashboard-page">
   <header class="main-header">
-    <div class="logo">Minha Mentoria</div>
+    <div class="logo">
+      <i class="fas fa-graduation-cap"></i> Minha Mentoria
+    </div>
 
     <nav class="main-nav">
-      <a href="dashboard.html" class="nav-link active">Início</a>
-      <a href="#modulo1" class="nav-link">Módulo 1</a>
-      <a href="#modulo2" class="nav-link">Módulo 2</a>
-      <a href="#modulo3" class="nav-link">Módulo 3</a>
+      <a href="dashboard.html" class="nav-link active">
+        <i class="fas fa-home"></i> Início
+      </a>
+      <a href="#modulo1" class="nav-link">
+        <i class="fas fa-book"></i> Módulo 1
+      </a>
+      <a href="#modulo2" class="nav-link">
+        <i class="fas fa-graduation-cap"></i> Módulo 2
+      </a>
+      <a href="#modulo3" class="nav-link">
+        <i class="fas fa-trophy"></i> Módulo 3
+      </a>
     </nav>
 
     <div class="header-right">
       <span id="userEmailLabel" class="user-email"></span>
-      <a href="profile.html" class="profile-avatar">P</a>
-      <button id="logoutBtn" class="logout-btn">Sair</button>
+      <a href="profile.html" class="profile-avatar">
+        <i class="fas fa-user"></i>
+      </a>
+      <button id="logoutBtn" class="logout-btn">
+        <i class="fas fa-sign-out-alt"></i> Sair
+      </button>
     </div>
   </header>
 
@@ -27,13 +42,13 @@
     <section class="hero-banner">
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <h1>Mentoria [Nome da Mentoria]</h1>
+        <h1><i class="fas fa-star"></i> Mentoria [Nome da Mentoria]</h1>
         <p>
           Acesso completo às aulas, encontros gravados, materiais de apoio
           e trilha passo a passo para você [benefício principal].
         </p>
         <button class="hero-button" onclick="scrollToSection('modulo1')">
-          Começar agora
+          <i class="fas fa-play"></i> Começar agora
         </button>
       </div>
     </section>
