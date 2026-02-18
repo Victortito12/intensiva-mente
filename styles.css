@@ -52,6 +52,11 @@ body {
   font-size: 14px;
 }
 
+.login-card label i {
+  margin-right: 6px;
+  color: #e50914;
+}
+
 .login-card input {
   width: 100%;
   padding: 10px 12px;
@@ -78,6 +83,10 @@ body {
   font-weight: bold;
   font-size: 15px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .login-card button:hover {
@@ -113,6 +122,9 @@ body {
   font-size: 24px;
   font-weight: 700;
   color: #e50914;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .main-nav {
@@ -124,6 +136,14 @@ body {
   color: #ddd;
   text-decoration: none;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s;
+}
+
+.nav-link i {
+  font-size: 16px;
 }
 
 .nav-link:hover,
@@ -154,8 +174,10 @@ body {
   color: #fff;
   font-weight: 600;
   font-size: 14px;
+  transition: background 0.2s;
 }
 
+.profile-avatar:hover,
 .profile-avatar.active {
   background: #e50914;
 }
@@ -168,6 +190,10 @@ body {
   border-radius: 3px;
   font-size: 12px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s;
 }
 
 .logout-btn:hover {
@@ -201,6 +227,9 @@ body {
 .hero-content h1 {
   font-size: 32px;
   margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .hero-content p {
@@ -217,6 +246,10 @@ body {
   color: #fff;
   font-weight: 600;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s;
 }
 
 .hero-button:hover {
@@ -238,6 +271,9 @@ body {
 .module-title {
   font-size: 18px;
   margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .lesson-list {
@@ -299,6 +335,9 @@ body {
 .lesson-meta {
   font-size: 12px;
   color: #aaa;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .lesson-card:hover {
@@ -329,6 +368,10 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
+.video-thumbnail-wrapper {
+  margin-bottom: 16px;
+}
+
 .lesson-details {
   margin-top: 16px;
 }
@@ -357,6 +400,10 @@ body {
   border: none;
   font-size: 14px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s;
 }
 
 .primary-btn {
@@ -391,6 +438,9 @@ body {
 .sidebar-lessons h2 {
   font-size: 18px;
   margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .related-lessons-list {
@@ -408,6 +458,7 @@ body {
   background: #111;
   border-radius: 4px;
   cursor: pointer;
+  transition: background 0.2s;
 }
 
 .related-lesson-item:hover {
@@ -452,6 +503,9 @@ body {
 .profile-main h1 {
   font-size: 28px;
   margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .profile-card {
@@ -464,6 +518,9 @@ body {
 .profile-card h2 {
   font-size: 18px;
   margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .progress-bar {
@@ -497,6 +554,16 @@ body {
   background: #1a1a1a;
   border-radius: 4px;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.completed-item::before {
+  content: "\f058";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #2ecc71;
 }
 
 /* Responsivo */
@@ -526,5 +593,13 @@ body {
 
   .catalog-section {
     padding: 0 16px 24px;
+  }
+
+  .main-nav {
+    gap: 8px;
+  }
+
+  .nav-link span {
+    display: none;
   }
 }
