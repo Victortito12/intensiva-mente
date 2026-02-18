@@ -4,30 +4,42 @@
   <meta charset="UTF-8" />
   <title>Assistir aula - Minha Mentoria</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="player-page">
   <header class="main-header">
-    <div class="logo">Minha Mentoria</div>
+    <div class="logo">
+      <i class="fas fa-graduation-cap"></i> Minha Mentoria
+    </div>
 
     <nav class="main-nav">
-      <a href="dashboard.html" class="nav-link">Início</a>
+      <a href="dashboard.html" class="nav-link">
+        <i class="fas fa-home"></i> Início
+      </a>
     </nav>
 
     <div class="header-right">
       <span id="userEmailLabel" class="user-email"></span>
-      <a href="profile.html" class="profile-avatar">P</a>
-      <button id="logoutBtn" class="logout-btn">Sair</button>
+      <a href="profile.html" class="profile-avatar">
+        <i class="fas fa-user"></i>
+      </a>
+      <button id="logoutBtn" class="logout-btn">
+        <i class="fas fa-sign-out-alt"></i> Sair
+      </button>
     </div>
   </header>
 
   <main class="player-main">
     <section class="player-content">
       <div class="video-wrapper" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px;">
+        <div class="video-thumbnail-wrapper">
+          <i class="fas fa-play-circle" style="font-size: 64px; color: #e50914;"></i>
+        </div>
         <p style="color: #aaa; font-size: 14px; text-align: center;">
           Clique no botão abaixo para assistir a aula no YouTube
         </p>
         <button id="openOnYoutubeBtn" class="primary-btn" style="font-size: 16px; padding: 12px 24px;">
-          ▶ Assistir aula
+          <i class="fab fa-youtube"></i> Assistir aula
         </button>
       </div>
 
@@ -39,17 +51,17 @@
 
         <div class="lesson-actions">
           <button id="markCompletedBtn" class="primary-btn">
-            Marcar como concluída
+            <i class="fas fa-check-circle"></i> Marcar como concluída
           </button>
           <button id="backToDashboardBtn" class="secondary-btn">
-            Voltar ao catálogo
+            <i class="fas fa-arrow-left"></i> Voltar ao catálogo
           </button>
         </div>
       </div>
     </section>
 
     <aside class="sidebar-lessons">
-      <h2>Próximas aulas</h2>
+      <h2><i class="fas fa-list"></i> Próximas aulas</h2>
       <div id="relatedLessons" class="related-lessons-list">
       </div>
     </aside>
