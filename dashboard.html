@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Catálogo - Minha Mentoria</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard-page">
+  <header class="main-header">
+    <div class="logo">Minha Mentoria</div>
+
+    <nav class="main-nav">
+      <a href="dashboard.html" class="nav-link active">Início</a>
+      <a href="#modulo1" class="nav-link">Módulo 1</a>
+      <a href="#modulo2" class="nav-link">Módulo 2</a>
+      <a href="#modulo3" class="nav-link">Módulo 3</a>
+    </nav>
+
+    <div class="header-right">
+      <span id="userEmailLabel" class="user-email"></span>
+      <a href="profile.html" class="profile-avatar">P</a>
+      <button id="logoutBtn" class="logout-btn">Sair</button>
+    </div>
+  </header>
+
+  <main class="dashboard-main">
+    <section class="hero-banner">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Mentoria [Nome da Mentoria]</h1>
+        <p>
+          Acesso completo às aulas, encontros gravados, materiais de apoio
+          e trilha passo a passo para você [benefício principal].
+        </p>
+        <button class="hero-button" onclick="scrollToSection('modulo1')">
+          Começar agora
+        </button>
+      </div>
+    </section>
+
+    <section id="catalog" class="catalog-section">
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

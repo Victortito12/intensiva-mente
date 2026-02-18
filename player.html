@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Assistir aula - Minha Mentoria</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="player-page">
+  <header class="main-header">
+    <div class="logo">Minha Mentoria</div>
+
+    <nav class="main-nav">
+      <a href="dashboard.html" class="nav-link">Início</a>
+    </nav>
+
+    <div class="header-right">
+      <span id="userEmailLabel" class="user-email"></span>
+      <a href="profile.html" class="profile-avatar">P</a>
+      <button id="logoutBtn" class="logout-btn">Sair</button>
+    </div>
+  </header>
+
+  <main class="player-main">
+    <section class="player-content">
+      <div class="video-wrapper" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px;">
+        <p style="color: #aaa; font-size: 14px; text-align: center;">
+          Clique no botão abaixo para assistir a aula no YouTube
+        </p>
+        <button id="openOnYoutubeBtn" class="primary-btn" style="font-size: 16px; padding: 12px 24px;">
+          ▶ Assistir aula
+        </button>
+      </div>
+
+      <div class="lesson-details">
+        <h1 id="lessonTitle">Título da aula</h1>
+        <p id="lessonDescription">
+          Descrição da aula selecionada.
+        </p>
+
+        <div class="lesson-actions">
+          <button id="markCompletedBtn" class="primary-btn">
+            Marcar como concluída
+          </button>
+          <button id="backToDashboardBtn" class="secondary-btn">
+            Voltar ao catálogo
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <aside class="sidebar-lessons">
+      <h2>Próximas aulas</h2>
+      <div id="relatedLessons" class="related-lessons-list">
+      </div>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

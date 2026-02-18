@@ -1,0 +1,530 @@
+/* Estilo geral */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Página de login */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #222 0, #000 55%);
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 16px;
+}
+
+.login-card {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 32px 28px;
+  border-radius: 8px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+  color: #e50914;
+  font-size: 28px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.login-card h2 {
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.login-card label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid #333;
+  background: #111;
+  color: #fff;
+  font-size: 14px;
+}
+
+.login-card input:focus {
+  outline: none;
+  border-color: #e50914;
+}
+
+.login-card button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: none;
+  background: #e50914;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.login-card button:hover {
+  background: #f40612;
+}
+
+.login-note {
+  margin-top: 16px;
+  font-size: 12px;
+  color: #aaa;
+  text-align: center;
+}
+
+/* DASHBOARD */
+.dashboard-page {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #e50914;
+}
+
+.main-nav {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-link {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #fff;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-email {
+  font-size: 13px;
+  color: #bbb;
+}
+
+.profile-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  background: #555;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.profile-avatar.active {
+  background: #e50914;
+}
+
+.logout-btn {
+  background: transparent;
+  border: 1px solid #666;
+  color: #eee;
+  padding: 6px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #e50914;
+  border-color: #e50914;
+}
+
+.hero-banner {
+  position: relative;
+  height: 60vh;
+  min-height: 320px;
+  background-image: url("https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1600");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 24px;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, #000 10%, rgba(0, 0, 0, 0.2));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 80px 32px 40px;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  padding: 10px 18px;
+  border-radius: 4px;
+  border: none;
+  background: #e50914;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  background: #f40612;
+}
+
+.dashboard-main {
+  padding-bottom: 40px;
+}
+
+.catalog-section {
+  padding: 0 32px 32px;
+}
+
+.module-row {
+  margin-bottom: 24px;
+}
+
+.module-title {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.lesson-list {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.lesson-list::-webkit-scrollbar {
+  height: 6px;
+}
+
+.lesson-list::-webkit-scrollbar-track {
+  background: #111;
+}
+
+.lesson-list::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+.lesson-card {
+  min-width: 180px;
+  max-width: 220px;
+  background: #111;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lesson-thumb {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background-size: cover;
+  background-position: center;
+}
+
+.lesson-thumb::after {
+  content: "▶";
+  position: absolute;
+  right: 8px;
+  bottom: 6px;
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+.lesson-info {
+  padding: 8px 10px 10px;
+}
+
+.lesson-title {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.lesson-meta {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.lesson-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+/* PLAYER */
+.player-page {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.player-main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  padding: 90px 32px 32px;
+}
+
+.video-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #111;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.lesson-details {
+  margin-top: 16px;
+}
+
+.lesson-details h1 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.lesson-details p {
+  font-size: 14px;
+  color: #ddd;
+  margin-bottom: 16px;
+}
+
+.lesson-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 8px 14px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background: #e50914;
+  color: #fff;
+  font-weight: 600;
+}
+
+.primary-btn:hover {
+  background: #f40612;
+}
+
+.primary-btn:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+.secondary-btn {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #666;
+}
+
+.secondary-btn:hover {
+  background: #222;
+}
+
+.sidebar-lessons {
+  margin-top: 8px;
+}
+
+.sidebar-lessons h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.related-lessons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.related-lesson-item {
+  display: flex;
+  gap: 8px;
+  padding: 6px;
+  background: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.related-lesson-item:hover {
+  background: #222;
+}
+
+.related-lesson-thumb {
+  width: 80px;
+  height: 45px;
+  border-radius: 3px;
+  background-size: cover;
+  background-position: center;
+}
+
+.related-lesson-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.related-lesson-title {
+  font-size: 13px;
+}
+
+.related-lesson-meta {
+  font-size: 11px;
+  color: #aaa;
+}
+
+/* PROFILE */
+.profile-page {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.profile-main {
+  padding: 90px 32px 32px;
+  max-width: 800px;
+}
+
+.profile-main h1 {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.profile-card {
+  background: #111;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.profile-card h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 24px;
+  background: #222;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #e50914;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.completed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.completed-item {
+  padding: 8px;
+  background: #1a1a1a;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .player-main {
+    grid-template-columns: 1fr;
+    padding: 80px 16px 24px;
+  }
+
+  .sidebar-lessons {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    padding: 12px 16px;
+  }
+
+  .hero-content {
+    padding: 60px 16px 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .catalog-section {
+    padding: 0 16px 24px;
+  }
+}

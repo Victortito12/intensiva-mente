@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Perfil - Minha Mentoria</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="profile-page">
+  <header class="main-header">
+    <div class="logo">Minha Mentoria</div>
+
+    <nav class="main-nav">
+      <a href="dashboard.html" class="nav-link">Início</a>
+    </nav>
+
+    <div class="header-right">
+      <span id="userEmailLabel" class="user-email"></span>
+      <a href="profile.html" class="profile-avatar active">P</a>
+      <button id="logoutBtn" class="logout-btn">Sair</button>
+    </div>
+  </header>
+
+  <main class="profile-main">
+    <h1>Meu Perfil</h1>
+
+    <div class="profile-card">
+      <h2>Progresso Geral</h2>
+      <div class="progress-bar">
+        <div id="progressFill" class="progress-fill"></div>
+      </div>
+      <p id="progressText" class="progress-text">0% concluído</p>
+    </div>
+
+    <div class="profile-card">
+      <h2>Aulas Concluídas</h2>
+      <div id="completedList" class="completed-list">
+        <p style="color: #aaa;">Nenhuma aula concluída ainda.</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
