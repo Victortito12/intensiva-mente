@@ -4,27 +4,36 @@
   <meta charset="UTF-8" />
   <title>Perfil - Minha Mentoria</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="profile-page">
   <header class="main-header">
-    <div class="logo">Minha Mentoria</div>
+    <div class="logo">
+      <i class="fas fa-graduation-cap"></i> Minha Mentoria
+    </div>
 
     <nav class="main-nav">
-      <a href="dashboard.html" class="nav-link">Início</a>
+      <a href="dashboard.html" class="nav-link">
+        <i class="fas fa-home"></i> Início
+      </a>
     </nav>
 
     <div class="header-right">
       <span id="userEmailLabel" class="user-email"></span>
-      <a href="profile.html" class="profile-avatar active">P</a>
-      <button id="logoutBtn" class="logout-btn">Sair</button>
+      <a href="profile.html" class="profile-avatar active">
+        <i class="fas fa-user"></i>
+      </a>
+      <button id="logoutBtn" class="logout-btn">
+        <i class="fas fa-sign-out-alt"></i> Sair
+      </button>
     </div>
   </header>
 
   <main class="profile-main">
-    <h1>Meu Perfil</h1>
+    <h1><i class="fas fa-user-circle"></i> Meu Perfil</h1>
 
     <div class="profile-card">
-      <h2>Progresso Geral</h2>
+      <h2><i class="fas fa-chart-line"></i> Progresso Geral</h2>
       <div class="progress-bar">
         <div id="progressFill" class="progress-fill"></div>
       </div>
@@ -32,7 +41,7 @@
     </div>
 
     <div class="profile-card">
-      <h2>Aulas Concluídas</h2>
+      <h2><i class="fas fa-check-double"></i> Aulas Concluídas</h2>
       <div id="completedList" class="completed-list">
         <p style="color: #aaa;">Nenhuma aula concluída ainda.</p>
       </div>
