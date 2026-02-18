@@ -8,7 +8,7 @@ const modulesData = [
         title: "Boas-vindas e visao geral da mentoria",
         duration: "12 min",
         thumb: "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400",
-        videoUrl: "https://www.youtube.com/watch?v=V2oD8yRQsTU",
+        videoUrl: "https://www.youtube.com/watch?v=M7FIvfx5J10",
         description: "Nesta aula voce entende a visao geral da mentoria, o passo a passo e como tirar o maximo proveito dos encontros e materiais.",
       },
       {
@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const title = document.createElement("h2");
       title.className = "module-title";
-      title.textContent = module.title;
+      title.innerHTML = `<i class="fas fa-folder-open"></i> ${module.title}`;
 
       const lessonList = document.createElement("div");
       lessonList.className = "lesson-list";
@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const metaEl = document.createElement("div");
         metaEl.className = "lesson-meta";
-        metaEl.textContent = lesson.duration;
+        metaEl.innerHTML = `<i class="far fa-clock"></i> ${lesson.duration}`;
 
         info.appendChild(titleEl);
         info.appendChild(metaEl);
@@ -272,7 +272,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const meta = document.createElement("div");
         meta.className = "related-lesson-meta";
-        meta.textContent = lesson.duration;
+        meta.innerHTML = `<i class="far fa-clock"></i> ${lesson.duration}`;
 
         info.appendChild(title);
         info.appendChild(meta);
@@ -289,7 +289,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function updateCompletedState() {
       const isCompleted = completedLessons.some((entry) => entry.moduleId === moduleId && entry.lessonId === lessonId);
       if (isCompleted) {
-        markCompletedBtn.textContent = "Aula concluida";
+        markCompletedBtn.innerHTML = '<i class="fas fa-check-circle"></i> Aula concluida';
         markCompletedBtn.disabled = true;
         markCompletedBtn.classList.add("secondary-btn");
         markCompletedBtn.classList.remove("primary-btn");
